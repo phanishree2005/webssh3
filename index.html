@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web3 Private Room</title>
+
+  <!-- Ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.umd.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Web3 Private Room</h1>
+
+    <div class="mode-toggle">
+      <button id="walletModeBtn" class="active">Wallet Mode</button>
+      <button id="demoModeBtn">Demo Mode</button>
+    </div>
+
+    <div id="walletSection">
+      <button id="connectBtn">Connect MetaMask</button>
+      <div id="walletAddress"></div>
+    </div>
+
+    <div id="demoSection" style="display:none;">
+      <p>Demo mode active. No wallet needed.</p>
+    </div>
+
+    <hr/>
+
+    <div id="mintSection">
+      <button id="mintBtn">Mint Room NFT</button>
+      <button id="copyRoomIdBtn">Copy Room ID</button>
+      <div id="mintStatus"></div>
+    </div>
+
+    <hr/>
+
+    <div id="joinSection">
+      <h2>Request to Join a Room</h2>
+      <input type="text" id="joinRoomId" placeholder="Room ID" />
+      <button id="joinBtn">Request Join</button>
+      <div id="joinStatus"></div>
+    </div>
+
+    <hr/>
+
+    <div id="approveSection">
+      <h2>Approve/Reject Requests</h2>
+      <input type="text" id="approveRoomId" placeholder="Room ID" />
+      <input type="text" id="approveUser" placeholder="User Address" />
+      <button id="approveBtn">Approve</button>
+      <button id="rejectBtn">Reject</button>
+      <div id="approveStatus"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

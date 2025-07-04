@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ffffff33;
+  margin: 2rem 0;
+}
+
+.mode-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-toggle button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #ffffff22;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mode-toggle button.active {
+  background: #00c6ff;
+  color: #000;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.5rem;
+  background: #00c6ff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0072ff;
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#copyRoomIdBtn {
+  display: none;
+  margin-left: 10px;
+}
+
+#mintStatus, #joinStatus, #approveStatus {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #ffeb3b;
+}
