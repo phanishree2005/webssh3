@@ -1,0 +1,53 @@
+first step 
+// Prompt: Create a GitHub README for MetaRoom dApp with:
+// - Project overview
+// - Features
+// - Tech stack
+// - How to run
+// - Demo instructions
+// - Contributors
+
+# MetaRoom dApp
+
+## Project Overview
+MetaRoom is a decentralized application (dApp) that enables users to create, own, and manage virtual rooms as NFTs on the blockchain. Room owners can approve guests, and all permissions are managed on-chain. The dApp features a simple UI and a 3D virtual room visualization.
+
+## Features
+- Mint unique Room NFTs (ERC-721)
+- Approve guests for each room
+- Check guest approval status
+- 3D virtual room using A-Frame
+- MetaMask wallet integration
+- On-chain access control
+
+## Tech Stack
+- **Solidity** (RoomNFT smart contract)
+- **Hardhat** (development & deployment)
+- **ethers.js** (frontend blockchain interaction)
+- **A-Frame** (3D virtual room)
+- **MetaMask** (wallet integration)
+- **HTML/CSS/JavaScript** (frontend)
+
+## How to Run
+1. **Clone the repository**
+2. **Install dependencies** (for contract deployment):
+   ```bash
+   npm install
+   ```
+3. **Deploy the contract** (using Hardhat):
+   ```bash
+   npx hardhat run scripts/deploy.js --network sepolia
+   ```
+4. **Update the contract address** in `frontend/script.js` (`CONTRACT_ADDRESS`)
+5. **Open `frontend/index.html` in your browser**
+
+## Demo Instructions
+- Connect your MetaMask wallet
+- Mint a Room NFT
+- Approve guests by entering their address and room ID
+- Guests can check if they are approved and join the 3D room
+
+## Contributors
+-phanishree N
+  anupriya
+  gasthi hasitha  - 
